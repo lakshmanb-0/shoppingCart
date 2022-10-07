@@ -1,0 +1,33 @@
+.product_img_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.fa-xmark {
+    opacity: 0.7;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.count_box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+    margin: 0 auto;
+    padding: 0.3rem 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 2rem;
+    justify-content: center;
+    width: 65%;
+}
+
+.count_box i {
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}

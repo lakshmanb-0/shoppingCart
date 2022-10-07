@@ -1,0 +1,40 @@
+.Header,
+.header_right,
+.header_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_title {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.Header {
+    padding: 1rem 4rem;
+}
+
+.header_left,
+.header_right {
+    gap: 1rem;
+}
+
+.header_left .header_reset {
+    background-color: transparent;
+    color: aqua;
+    font-size: 1.1rem;
+}
+
+.header_right .search_box input {
+    background-color: lightblue;
+    padding: 0.2rem 0.5rem;
+}
+
+.header_right .header_cart {
+    background-color: transparent;
+    background-color: aqua;
+    padding: 0.5rem 0.7rem;
+    color: #fff;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,32 @@
+.product_header th {
+    background-color: aliceblue;
+}
+
+.product_img {
+    width: 4rem;
+}
+
+.item_cart {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.item_count {
+    padding: 0.3rem 1rem;
+    font-size: 1.2rem;
+}
+
+.item_cart_i {
+    background-color: black;
+    color: #fff;
+    padding: 0.3rem 1rem;
+}
+
+.item_stock .green {
+    color: green;
+}
+
+.item_stock .red {
+    color: red;
+}

@@ -1,0 +1,35 @@
+.checkout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    padding: 5rem 4rem;
+}
+
+.cart_details {
+    padding: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.cart_title {
+    margin-bottom: 0.7rem;
+}
+
+.cart_subtotal {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.cart_total {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.cart_btn {
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+}
