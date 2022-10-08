@@ -69,6 +69,7 @@ function Main() {
     setSelectedOption(Category[0]);
     setsize(product);
     setSelectedSize(Size[0]);
+    setProduct(ProductData);
   };
 
   // get input from search input
