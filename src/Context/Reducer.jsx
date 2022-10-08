@@ -16,6 +16,12 @@ export const reducer = (state = initialstate, action) => {
         cartdata: state.cartdata.filter((item) => item.id !== action.payload),
       };
     }
+    case "remove+subtotal": {
+      return {
+        ...state,
+        subtotal: state.subtotal.filter((item) => item !== action.payload),
+      };
+    }
     case "subtotal": {
       return {
         ...state,
@@ -29,6 +35,7 @@ export const reducer = (state = initialstate, action) => {
         subtotal: state.subtotal,
       };
     }
+
     default: {
       return state;
     }

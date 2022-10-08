@@ -17,7 +17,10 @@ function ProductItem({ item, handleCross }) {
         <td className="product_img_box">
           <i
             className="fa-solid fa-xmark"
-            onClick={() => handleCross(item.id)}
+            onClick={() => {
+              handleCross(item.id);
+              dispatch({ type: "remove+subtotal", payload: item.price });
+            }}
           ></i>
           <img src={item.thumbnail} alt="" className="product_img" />
         </td>
@@ -34,7 +37,7 @@ function ProductItem({ item, handleCross }) {
                 dispatch({ type: "removesubtotal", payload: item.price });
               }}
             ></i>
-            <span>{count}</span>
+            <span onChange={count === 0 && handleCross(item.id)}>{count}</span>
             <i
               className="fa-solid fa-plus"
               onClick={() => {

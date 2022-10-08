@@ -50,7 +50,9 @@ function Checkout() {
           <span>${subtotal}</span>
         </div>
         <Link to="/thank">
-          <button className="cart_btn">PROCEED TO CHECKOUT</button>
+          <button className={`cart_btn ${subtotal == 0 ? "disabled" : ""}`}>
+            PROCEED TO CHECKOUT
+          </button>
         </Link>
       </div>
     </div>
